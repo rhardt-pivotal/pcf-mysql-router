@@ -7,4 +7,4 @@ applications:
     - binary_buildpack
    stack: cflinuxfs3
    path: .
-   command: echo 'your-password' | PATH=./bin LD_LIBRARY_PATH=./lib mysqlrouter --bootstrap username@your-cluster:3306 --directory ./current --conf-base-port=8080 && PATH=./bin LD_LIBRARY_PATH=./lib mysqlrouter -c ./current/mysqlrouter.conf &
+   command: echo 'your-password' | PATH=./bin LD_LIBRARY_PATH=./lib mysqlrouter --bootstrap username@your-cluster-hostname:3306 --directory ./current --conf-base-port=8080 && PATH=./bin LD_LIBRARY_PATH=./lib mysqlrouter -c ./current/mysqlrouter.conf &
