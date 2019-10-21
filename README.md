@@ -1,6 +1,6 @@
-##mysql-router on Pivotal Application Service (PAS)
+## `mysql-router` on Pivotal Application Service (PAS)
 
-#Prerequsites
+### Prerequsites
 In order to run `mysql-router` on PAS, you need to use `CredHub` to securely store mysql database credentials. You can create
 an instance of `CredHub` by using command below.
 
@@ -17,7 +17,7 @@ Once you create an instance, you can then bind it to your `mysql-router` applica
 $ cf bind-service your-mysqlrouter-app-name mysqlrouter-config
 ```
 
-# Push `mysql-router`
+### Push `mysql-router` to PAS
 
 All you now have to do is to use `cf` to push the app.
 
@@ -25,9 +25,10 @@ All you now have to do is to use `cf` to push the app.
 $ cf push
 ```
 
+
 The following is the official README for `mysql-router`.
 
-===========================================================================
+---------------------------
 
 
 Copyright (c) 2015, 2019, Oracle and/or its affiliates. All rights reserved.
