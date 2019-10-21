@@ -8,3 +8,4 @@ applications:
    stack: cflinuxfs3
    path: .
    command: ./start.sh
+
